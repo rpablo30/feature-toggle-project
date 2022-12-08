@@ -24,4 +24,5 @@ public class UserDto {
         this.name = entity.getName();
         this.password = entity.getPassword();
     }
+
 }

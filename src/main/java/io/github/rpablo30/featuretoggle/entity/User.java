@@ -7,6 +7,7 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Getter
@@ -18,13 +19,13 @@ public class User{
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "user_name", nullable = false)
+    @Column(name = "u_name", nullable = false)
     private String name;
-    @Column(name = "user_password",nullable = false)
+    @Column(name = "u_password",nullable = false)
     private String password;
-    @Column(name = "created", nullable = false)
+    @Column(name = "Data_created", nullable = false)
     private LocalDateTime dateCreated;
-    @Column()
+    @Column(name = "Data_Update")
     private Date dateUpdate;
 
     public User() {
